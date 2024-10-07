@@ -16,6 +16,10 @@ void main() {
 
   // EXEMPLO SWITCH CASE
   verificarNota(nota);  // Chama a função para verificar a nota
+
+  // EXEMPLO TERNÁRIO
+  String resultado = (nota >= 7) ? 'Aprovado' : 'Reprovado';
+  print(resultado);  // Saída: Aprovado
 }
 
 void verificarNota(int nota) {
