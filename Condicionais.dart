@@ -1,9 +1,7 @@
+void main() {
+  int nota = 7;
 
- 
- int nota = 7;
- 
- // EXEMPLO IF ELSE ELSEIF
-
+  // EXEMPLO IF ELSE ELSEIF
   if (nota == 10) {
     print('Excelente');
   } else if (nota >= 7) {
@@ -16,10 +14,11 @@
 
   // Saída: Bom
 
+  // EXEMPLO SWITCH CASE
+  verificarNota(nota);  // Chama a função para verificar a nota
+}
 
-// EXEMPLO SWITCH CASE
-
- void verificarNota(int nota) {
+void verificarNota(int nota) {
   switch (nota) {
     case 10:
       print('Excelente');
@@ -37,7 +36,3 @@
       print('Insuficiente');
   }
 }
-
-verificarNota(nota);  // Saída: Bom
-
- 
