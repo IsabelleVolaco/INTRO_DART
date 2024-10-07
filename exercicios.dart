@@ -1,3 +1,5 @@
+// CALCULADORA MODA
+
 int calcularModa(List<int> numeros) {
   int moda = numeros[0];
   int maxContagem = 0;
