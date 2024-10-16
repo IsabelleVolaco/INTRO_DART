@@ -19,9 +19,11 @@ class Cao extends Animal {
   
   @override //não é necessário mas é uma boa pratica para indicar que substituirá
   void dormir() {
-    print("cão dormindo");
+    super.dormir(); //chama o método do PAI
+    print("cão dormindo"); //o próprio FILHO
   }
 }
+
 
 class Passaro extends Animal {
   void emitirSom() {
