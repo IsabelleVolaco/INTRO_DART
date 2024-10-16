@@ -8,6 +8,14 @@ void main() {
   //EX 2 
   int quantidade = 10;
   disparadorFixador(quantidade); 
+
+  //EX 3
+  iterando();
+
+  //EX 4
+  int idade = 17;
+  verificador(idade); 
+  trueOuFalse();
 }
 
 //EX 1 SWITCH
@@ -51,6 +59,24 @@ void disparadorFixador(int quantidade) {
     print('Erro!');
   }
   
+}
+
+//EX 3 FOR
+void iterando() {
+  for (int i = 0; i < 5; i++) {
+    print('Valor de i: $i');
+  }
+}
+
+//EX 4 TERNARIO
+void verificador(int idade) {
+  bool maiorDeIdade = idade > 17 ? true : false;
+  print(maiorDeIdade);
+}
+
+void trueOuFalse() {
+  bool minhaVar = true;
+  minhaVar == true ? print('É verdade') : print('Não é verdade');
 }
 
 
