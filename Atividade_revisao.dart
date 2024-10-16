@@ -19,6 +19,10 @@ void main() {
   //EX 5
   int cinquentaPar = 50;
   imprimePar(cinquentaPar); 
+
+  //EX 6
+  int num = -5; // Defina o número aqui
+  verPolaridade(num);
 }
 
 //EX 1 
@@ -68,5 +72,16 @@ void imprimePar(int cinquentaPar) {
      if (i % 2 == 0){
      print('$i é par!');
      }
+  }
+}
+
+//EX 6
+void verPolaridade(int num){
+    if (num > 0) {
+    print("O número é positivo.");
+  } else if (num < 0) {
+    print("O número é negativo.");
+  } else {
+    print("O número é zero.");
   }
 }
