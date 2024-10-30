@@ -300,7 +300,6 @@ void main() {
     print(listaTotal5);
   
 
-
 //EXEMPLO 19 - chave-valor (lembra dicionário)
 
   //conseguimos definir um índice customizado
@@ -332,7 +331,19 @@ void main() {
   print(estados3.values);
   
 
+//EXEMPLO 20 - mapa dinâmico
 
+  Map<String, String> estados4 = Map(); 
+  estados4['SC']= "Santa Catarina";
+  estados4['PR']= "Paraná";
+  estados4['SP']= "São Paulo";
+  estados4.forEach((chave, valor) =>print ("$chave - $valor"));
+ 
+  
+  Map<String, dynamic> user = Map(); 
+  user["nome"] = "Vitor";
+  user["idade"] = 40;
+  print(user);
 
 
 }
