@@ -1,5 +1,7 @@
 void main() {
-//EXEMPLO 1
+
+//EXEMPLO 1 - listas
+
     var lista = ["Laranja","Banana","Limão"];
     print(lista);
   
@@ -8,7 +10,8 @@ void main() {
     print(lista2);
 
 
-//EXEMPLO 2
+//EXEMPLO 2 - guardando valores em listas
+
     //List <String> lista = ["Laranja","Banana","Limão"];
     List <int> numeros = [1,2,5];
     List resultados = [2,"Vitor",22.4, 2, true];
@@ -16,7 +19,8 @@ void main() {
     print(resultados);
 
 
-//EXEMPLO 3
+//EXEMPLO 3 - adicionando na lista
+
     List <String> lista3 = ["Laranja","Banana","Limão"];
     lista.add("Tomate");
     print(lista3);
@@ -27,7 +31,8 @@ void main() {
     print(lista4);
 
 
-//EXEMPLO 4
+//EXEMPLO 4 - removendo da lista
+
     List <String> lista5 = ["Laranja","Banana","Limão"];
     lista5.add("Tomate");
     lista5.removeLast();
@@ -36,7 +41,8 @@ void main() {
     print(lista5);
 
 
-//EXEMPLO 5
+//EXEMPLO 5 - removendo onde
+
     List <String> lista6 = ["Laranja","Banana","Limão"];
     lista6.removeWhere((lista6) => lista6.length < 6);
     print(lista6);
@@ -52,7 +58,8 @@ void main() {
     print(lista7);
 
 
-//EXEMPLO 6
+//EXEMPLO 6 - comprimento, validação e substituição
+
     List <String> lista8 = ["Laranja","Banana","Limão"];
     print(lista8.length); //3 itens na lista
   
@@ -66,7 +73,8 @@ void main() {
     print(lista10);
   
 
-//EXEMPLO 7
+//EXEMPLO 7 - percorrendo com for
+
     List<String> lista11 = ["Maçã", "Banana", "Laranja"];
     for (var item in lista11) {
         //'item' é um objeto sendo criado
@@ -93,7 +101,7 @@ void main() {
     lista14.forEach((item) => print(item));
 
 
-//EXEMPLO 8
+//EXEMPLO 8 - juntando
 
     List<String> lista15 = ["Maçã", "Banana", "Laranja"];
     print(lista15.join(', ')); //cria uma string que é uma junção de todos os elementos da lista, no caso, este também os separa por espaço e virgula.
@@ -110,7 +118,7 @@ void main() {
     print(resulta2);
  
 
-//EXEMPLO 9
+//EXEMPLO 9 - tipos diferentes e cast
 
     var variosTipos = [1, "texto", true, 3.14];
 
@@ -131,7 +139,7 @@ void main() {
     print(lista18);
 
 
-//EXEMPLO 10
+//EXEMPLO 10 - lista aninhada
 
     var lista19 = [2,"Vitor", 33.56];
     lista19[2]="Maria";
@@ -146,7 +154,7 @@ void main() {
     print(listaAninhada);
   
 
-//EXEMPLO 11
+//EXEMPLO 11 - vetor e array dinâmico
 
     //VETOR DE TAMANHO FIXO (5), COM ELEMENTOS PREENCHIDOS POR (0)
     List<int> vetor = List.filled(5,0); 
@@ -162,17 +170,38 @@ void main() {
     print(arrayDinamico);
     
 
-//EXEMPLO 12
-  var frutas = ['Banana','Maçã','Laranja'];
-  frutas.add('Abacaxi');
-  print(frutas);
-  
-  
-  var frutas2= ['Banana','Maçã','Laranja'];
-  frutas2.addAll(['Abacaxi','Morango','Uva']);
-  print(frutas2);
+//EXEMPLO 12 - add e adicionando tudo
 
+    var frutas = ['Banana','Maçã','Laranja'];
+    frutas.add('Abacaxi');
+    print(frutas);
   
+  
+    var frutas2= ['Banana','Maçã','Laranja'];
+    frutas2.addAll(['Abacaxi','Morango','Uva']);
+    print(frutas2);
+
+
+//EXEMPLO 13 - valida se ta vazio, sort e inversão de lista
+
+    var frutas3 = ['Banana','Maçã','Laranja'];
+    print(frutas3.isEmpty);
+    print(frutas3.isNotEmpty);
+  
+  
+    var frutas4= ['Banana','Maçã','Laranja'];
+    frutas4.sort();
+    print(frutas4);
+  
+  
+    var frutas5= ['Banana','Maçã','Laranja'];
+    var frutasInvertidas = frutas5.reversed.toList();
+    print(frutasInvertidas);
+
+
+
+
+
 }
 
 
