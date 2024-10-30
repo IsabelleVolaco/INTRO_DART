@@ -199,8 +199,20 @@ void main() {
     print(frutasInvertidas);
 
 
+//EXEMPLO 14 - lista imutável
 
-
+    var nums = [1,2,3]; // torna imodificável, causando um erro ao tentar .add
+    //nums.add(4);
+  
+  
+    List<List<int>> minhaMatriz = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9] 
+    ];
+    print(minhaMatriz);
+    print(minhaMatriz[0][1]); // acessa o elemento da [LINHA][COLUNA] referente, sendo este 2
+    print(minhaMatriz[2][0]); // acessa o 7
 
 }
 
