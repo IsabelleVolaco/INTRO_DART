@@ -232,36 +232,105 @@ void main() {
 
 
 // EXEMPLO 16 - iterando e preenchendo matrizes
-// Iterando com foreach
-  List<List<int>> minhaMatriz3 = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9] 
-  ];
+    // Iterando com foreach
+     List<List<int>> minhaMatriz3 = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9] 
+    ];
   
-  minhaMatriz3.forEach((linha) {
-    linha.forEach((elemento) {
-      print(elemento);
-      });
-  });
+    minhaMatriz3.forEach((linha) {
+        linha.forEach((elemento) {
+        print(elemento);
+        });
+    });
 
   
+    List<List<int>> minhaMatriz4 = List.generate(3, (i) => List.filled(3,0)); // Cria uma lista vazia de listas
   
-   List<List<int>> minhaMatriz4 = List.generate(3, (i) => List.filled(3,0)); // Cria uma lista vazia de listas
-  
-  // Preencher a matriz dinamicamente
-  int valor = 1;
-  for (int i = 0; i < minhaMatriz4.length; i++) {
-    for (int j = 0; j < minhaMatriz4[i].length; j++) {
-      minhaMatriz4[i][j] = valor++;
+    // Preencher a matriz dinamicamente
+    int valor = 1;
+    for (int i = 0; i < minhaMatriz4.length; i++) {
+        for (int j = 0; j < minhaMatriz4[i].length; j++) {
+        minhaMatriz4[i][j] = valor++;
+        }
     }
-  }
-  print(minhaMatriz4);
+    print(minhaMatriz4);
   
 
 
+//EXEMPLO 17 - brincando com listas
+
+    List<int> minhaLista1 = [1,2,3];
+    List<int> minhaLista2 = [2,3,5];
+    var listaTotal = [];
+    listaTotal = [minhaLista1 + minhaLista2];
+    print(listaTotal);
+  
+  
+    List<int> minhaLista3 = [1,2,3];
+    List<int> minhaLista4 = [2,3,5];
+    var listaTotal2 = [];
+    listaTotal2 = [0, minhaLista3 + minhaLista4 ,89,90];
+    print(listaTotal2);
+  
+  
+    List<int> minhaLista5 = [1,2,3];
+    List<int> minhaLista6 = [4,5,6,7];
+    var listaTotal3 = [];
+    listaTotal3.addAll(minhaLista5 + minhaLista6);
+    print(listaTotal3);
+  
+  
+    bool valorAtivo = true;
+    List<int> minhaLista7 = [1,2,3];
+    List<int> minhaLista8 = [2,3,5];
+    var listaTotal4 = [];
+    listaTotal4 = [0, minhaLista7 + minhaLista8 ,89,if(valorAtivo)91]; //colocou true ou false
+    print(listaTotal4);
 
 
+//EXEMPLO 18 - verificando
+
+    List<int> minhaLista9 = [1,2,3];
+    List<int> minhaLista10 = [2,3,5];
+    var lista11 = [];
+    var listaTotal5 = [];
+    listaTotal5 = [0,minhaLista9+minhaLista10,...?lista11,89];  // o ',...?' verifica se e objeto é nulo (lista11) e se não for nulo, o insere na lista.
+    print(listaTotal5);
+  
+
+
+//EXEMPLO 19 - chave-valor (lembra dicionário)
+
+  //conseguimos definir um índice customizado
+  Map verduras = Map(); //chave-valor
+  verduras['MO']= "Moranga";
+  verduras['FE']= "Feijão";
+  verduras['CE']= "Cenoura";
+  print(verduras['FE']);
+  
+  
+  Map<String, String> estados = Map(); 
+  estados['SC']= "Santa Catarina";
+  estados['PR']= "Paraná";
+  estados['SP']= "São Paulo";
+  print(estados.keys);
+  
+
+  Map<int, String> estados2 = Map(); 
+  estados2[0]= "Santa Catarina";
+  estados2[1]= "Paraná";
+  estados2[2]= "São Paulo";
+  print(estados2);
+
+  
+  Map<String, String> estados3 = Map(); 
+  estados3["SC"]= "Santa Catarina";
+  estados3["PR"]= "Paraná";
+  estados3["SP"]= "São Paulo";
+  print(estados3.values);
+  
 
 
 
