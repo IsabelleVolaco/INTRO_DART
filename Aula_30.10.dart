@@ -89,7 +89,18 @@ void main() {
 
 //EXEMPLO 8
 
-
+  List<String> lista15 = ["Maçã", "Banana", "Laranja"];
+  print(lista15.join(', ')); //cria uma string que é uma junção de todos os elementos da lista, no caso, este também os separa por espaço e virgula.
+  print(lista15);
+  
+  List<String> letras = ["A", "B", "C"];
+  String resulta = letras.join();
+  print(resulta);
+    
+  List<double> letras2 = [1,2,3];
+  String resulta2 = letras2.join(); //apenas junta
+  print(resulta2);
+ 
 
 
 
