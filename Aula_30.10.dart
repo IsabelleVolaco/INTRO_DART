@@ -53,12 +53,44 @@ void main() {
   print(lista8.length); //3 itens na lista
   
   List <String> lista9 = ["Laranja","Banana","Limão"];
-  print(lista9.contains("Banana")); //true pois tem banana
+  print(lista9.contains("Banana")); //true pois tem banana, fazendo uma validação
 
   List <String> lista10 = ["Laranja","Banana","Limão"];
   lista10[0]="Tomate"; //substitui o primeiro item
   print(lista10);
   
+
+//EXEMPLO 7
+  List<String> lista11 = ["Maçã", "Banana", "Laranja"];
+  for (var item in lista11) {
+    //'item' é um objeto sendo criado
+    print(item);
+  }
+
+  print(".............");
+
+  List<String> lista12 = ["Maçã", "Banana", "Laranja"];
+  for (var item in lista12) {
+    print(item.length);
+  }
+
+  print(".............");
+
+  List<String> lista13 = ["Maçã", "Banana", "Laranja"];
+  for (var item in lista13) {
+    print(item.contains("Banana"));
+  }
+
+  print(".............");
+  
+  List<String> lista14 = ["Maçã", "Banana", "Laranja"];
+  lista14.forEach((item) => print(item));
+
+
+//EXEMPLO 8
+
+
+
 
 
 
