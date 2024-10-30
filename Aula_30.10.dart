@@ -199,7 +199,7 @@ void main() {
     print(frutasInvertidas);
 
 
-//EXEMPLO 14 - lista imutável
+//EXEMPLO 14 - lista imutável e matriz
 
     var nums = [1,2,3]; // torna imodificável, causando um erro ao tentar .add
     //nums.add(4);
@@ -213,6 +213,32 @@ void main() {
     print(minhaMatriz);
     print(minhaMatriz[0][1]); // acessa o elemento da [LINHA][COLUNA] referente, sendo este 2
     print(minhaMatriz[2][0]); // acessa o 7
+
+
+
+//EXEMPLO 15 - iterando sobre uma lista multidimensional
+
+    List<List<int>> minhaMatriz2 = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9] 
+    ];
+    for (int i = 0; i < minhaMatriz2.length; i++){
+        for (int j = 0; j < minhaMatriz2[i].length; j++){
+        print('Elemento na posição ($i,$j) : ${minhaMatriz2[i][j]}');
+        }    
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
