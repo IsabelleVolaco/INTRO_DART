@@ -231,7 +231,33 @@ void main() {
 
 
 
+// EXEMPLO 16 - iterando e preenchendo matrizes
+// Iterando com foreach
+  List<List<int>> minhaMatriz3 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9] 
+  ];
+  
+  minhaMatriz3.forEach((linha) {
+    linha.forEach((elemento) {
+      print(elemento);
+      });
+  });
 
+  
+  
+   List<List<int>> minhaMatriz4 = List.generate(3, (i) => List.filled(3,0)); // Cria uma lista vazia de listas
+  
+  // Preencher a matriz dinamicamente
+  int valor = 1;
+  for (int i = 0; i < minhaMatriz4.length; i++) {
+    for (int j = 0; j < minhaMatriz4[i].length; j++) {
+      minhaMatriz4[i][j] = valor++;
+    }
+  }
+  print(minhaMatriz4);
+  
 
 
 
