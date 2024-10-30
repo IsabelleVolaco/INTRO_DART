@@ -101,7 +101,20 @@ void main() {
   String resulta2 = letras2.join(); //apenas junta
   print(resulta2);
  
+//EXEMPLO 9
 
+  List<dynamic> lista16 = [1, "texto", true, 3.14];
+  print(lista16);
+  
+  /* O código usa cast para converter elementos da lista genérica (List<Object>) em tipos específicos (int e String). */
+  List<Object> lista17 = [1, "texto", true, 3.14];
+  //Acessando elementos com cast
+  int numero1 = lista17[0] as int;
+  String texto1 = lista17[1] as String;
+  print(lista17);
+    
+  List<Object?> lista18 = [1, "texto", true, 3.14];
+  print(lista18);
 
 
 
