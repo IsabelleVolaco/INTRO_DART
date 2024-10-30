@@ -3,6 +3,7 @@ void main() {
   var lista = ["Laranja","Banana","Limão"];
   print(lista);
   
+
   List lista2 = ["Laranja","Banana","Limão"];
   print(lista2);
 
@@ -20,6 +21,7 @@ void main() {
   lista.add("Tomate");
   print(lista3);
   
+
   List <String> lista4 = ["Laranja","Banana","Limão"];
   lista2.insert(1,"Tomate");
   print(lista4);
@@ -39,10 +41,12 @@ void main() {
   lista6.removeWhere((lista6) => lista6.length < 6);
   print(lista6);
 
+
   List <int> numbers = [5,8,2,4,1];
   numbers.removeWhere((number) => number % 2 == 0); //remove os pares dentro do próprio escopo
   print(numbers); 
   
+
   List <String> lista7 = ["Laranja","Banana","Limão"];
   lista7.clear();
   print(lista7);
@@ -52,8 +56,10 @@ void main() {
   List <String> lista8 = ["Laranja","Banana","Limão"];
   print(lista8.length); //3 itens na lista
   
+
   List <String> lista9 = ["Laranja","Banana","Limão"];
   print(lista9.contains("Banana")); //true pois tem banana, fazendo uma validação
+
 
   List <String> lista10 = ["Laranja","Banana","Limão"];
   lista10[0]="Tomate"; //substitui o primeiro item
@@ -93,29 +99,51 @@ void main() {
   print(lista15.join(', ')); //cria uma string que é uma junção de todos os elementos da lista, no caso, este também os separa por espaço e virgula.
   print(lista15);
   
+
   List<String> letras = ["A", "B", "C"];
   String resulta = letras.join();
   print(resulta);
     
+
   List<double> letras2 = [1,2,3];
   String resulta2 = letras2.join(); //apenas junta
   print(resulta2);
  
+
 //EXEMPLO 9
 
-  List<dynamic> lista16 = [1, "texto", true, 3.14];
-  print(lista16);
+    List<dynamic> lista16 = [1, "texto", true, 3.14];
+    print(lista16);
   
-  /* O código usa cast para converter elementos da lista genérica (List<Object>) em tipos específicos (int e String). */
-  List<Object> lista17 = [1, "texto", true, 3.14];
-  //Acessando elementos com cast
-  int numero1 = lista17[0] as int;
-  String texto1 = lista17[1] as String;
-  print(lista17);
-    
-  List<Object?> lista18 = [1, "texto", true, 3.14];
-  print(lista18);
 
+    /* O código usa cast para converter elementos da lista genérica (List<Object>) em tipos específicos (int e String). */
+    List<Object> lista17 = [1, "texto", true, 3.14];
+    //Acessando elementos com cast
+    int numero1 = lista17[0] as int;
+    String texto1 = lista17[1] as String;
+    print(lista17);
+    
+
+    List<Object?> lista18 = [1, "texto", true, 3.14];
+    print(lista18);
+
+
+//EXEMPLO 10
+
+    var lista19 = [2,"Vitor", 33.56];
+    lista19[2]="Maria";
+    lista19[0]="Pedro";
+    print(lista19);
+
+
+    List<List<Object>> listaAninhada = [
+    [1, 2, 3],
+    ['a','b','c'],
+    [true, false, true] ];
+    print(listaAninhada);
+  
+
+//EXEMPLO 11
 
 
 }
