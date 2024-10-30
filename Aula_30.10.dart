@@ -145,5 +145,20 @@ void main() {
 
 //EXEMPLO 11
 
+  //VETOR DE TAMANHO FIXO (5), COM ELEMENTOS PREENCHIDOS POR (0)
+  List<int> vetor = List.filled(5,0); 
+  vetor[0] = 10;
+  print(vetor);
+  /*vetor.add(6) dá erro pois não pode mudar o tamanho da lista*/
+
+  //lista sem tamanho fixo, chamada de ARRAY DINAMICO
+  List<int> arrayDinamico = []; 
+  arrayDinamico.add(1);
+  arrayDinamico.add(2);
+  print(arrayDinamico);
+    
+
+
+
 
 }
